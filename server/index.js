@@ -1,10 +1,13 @@
 const express = require('express');
 const axios = require('axios');
+const getReviews = require('../database/reviews');
 const app = express();
 const port = 3000;
 
-app.get('/', (req, res) => {
-    res.send('Successful request made to the reviews server.');
+app.get('/reviews', function(req, res) {
+  getReviews(reviews => {
+    res.send(reviews);
+  });
 });
 
 app.listen(port, () => {
