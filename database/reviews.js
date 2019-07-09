@@ -31,7 +31,7 @@ const reviewSchema = new mongoose.Schema(
 
 const Review = mongoose.model('Review', reviewSchema);
 
-const getReviews = (cb) => {
+const getBusinessReviews = (cb) => {
   Review.find((err, reviews) => {
     if(err) {
       console.error(err);
@@ -42,4 +42,4 @@ const getReviews = (cb) => {
 };
 
 module.exports = Review;
-module.exports = getReviews;
+module.exports = getBusinessReviews;

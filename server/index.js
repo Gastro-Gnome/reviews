@@ -4,8 +4,9 @@ const getReviews = require('../database/reviews');
 const app = express();
 const port = 3000;
 
-app.get('/reviews', function(req, res) {
-  getReviews(reviews => {
+app.get('/reviews/:businessId', function(req, res) {
+  console.log(req.params);
+  getBusinessReviews((req, reviews) => {
     res.send(reviews);
   });
 });
