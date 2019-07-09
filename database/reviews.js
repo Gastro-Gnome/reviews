@@ -31,15 +31,23 @@ const reviewSchema = new mongoose.Schema(
 
 const Review = mongoose.model('Review', reviewSchema);
 
-const getBusinessReviews = (cb) => {
-  Review.find((err, reviews) => {
-    if(err) {
-      console.error(err);
-    } else {
-      cb(reviews);
-    }
+async function getBusinessReviews(business) {
+  return await Review.find({bus_id: business}, (err, business) => {
+    return business;
   });
 };
 
-module.exports = Review;
-module.exports = getBusinessReviews;
+// const getBusinessReviews = (cb) => {
+//   Review.find((err, reviews) => {
+//     if(err) {
+//       console.error(err);
+//     } else {
+//       cb(reviews);
+//     }
+//   });
+// };
+
+module.exports = { 
+  Review,
+  getBusinessReviews
+};

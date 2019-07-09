@@ -1,5 +1,5 @@
 const db = require('./index.js');
-const Review = require('./reviews.js');
+const { Review } = require('./reviews.js');
 
 const sampleData = [
   {
