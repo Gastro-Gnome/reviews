@@ -1,4 +1,4 @@
 node_modules
 package-lock.json
-dist/
-public/dist/bundle.js
+bundle.js
+__snapshots__
