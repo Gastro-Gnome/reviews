@@ -25,6 +25,15 @@
     "url": "https://github.com/appetizer-aperitif/reviews/issues"
   },
   "homepage": "https://github.com/appetizer-aperitif/reviews#readme",
+  "jest": {
+    "verbose": true,
+    "setupFilesAfterEnv": [
+      "./client/testSetup"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
