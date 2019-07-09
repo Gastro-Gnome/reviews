@@ -1,15 +1,24 @@
 const express = require('express');
 const axios = require('axios');
-const getReviews = require('../database/reviews');
+const { getBusinessReviews } = require('../database/reviews');
+
 const app = express();
 const port = 3000;
 
-app.get('/reviews/:businessId', function(req, res) {
-  console.log(req.params);
-  getBusinessReviews((req, reviews) => {
-    res.send(reviews);
+app.param('busId', (req, res, next, business) => {
+  
+  req.business = getBusinessReviews(business, (err, business) => {
+    if(err) return next(err);
+  })
+  .then((business) => {
+    req.business = business;
+    next();
   });
 });
+
+app.get('/reviews/:busId', ((req, res, next) =>  {
+  res.send(req.business);
+}));
 
 app.listen(port, () => {
   console.log(`Reviews server is running on port ${port}`);
