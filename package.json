@@ -28,7 +28,7 @@
   "jest": {
     "verbose": true,
     "setupFilesAfterEnv": [
-      "./client/src/components/test.setup.jsx"
+      "./client/src/setupTests.jsx"
     ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
