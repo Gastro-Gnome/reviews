@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
+import toJson from 'enzyme-to-json';
 import App from './App';
 
 configure({ adapter: new Adapter() });
 
-describe('<App />', () => {
-  it('renders one <App /> component', () => {
+describe('App', () => {
+  it('Component renders successfully', () => {
     const wrapper = shallow(<App />);
-    expect(wrapper.find(App)).toMatchSnapshot();
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 });
