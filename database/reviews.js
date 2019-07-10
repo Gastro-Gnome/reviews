@@ -37,16 +37,6 @@ async function getBusinessReviews(business) {
   });
 };
 
-// const getBusinessReviews = (cb) => {
-//   Review.find((err, reviews) => {
-//     if(err) {
-//       console.error(err);
-//     } else {
-//       cb(reviews);
-//     }
-//   });
-// };
-
 module.exports = { 
   Review,
   getBusinessReviews
