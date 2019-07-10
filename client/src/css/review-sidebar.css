@@ -1,3 +1,46 @@
+body {
+  font-size: 14px;
+  line-height: 1.28571em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+a {
+  color: #0073bb;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 479px) {
+	.responsive .responsive-hidden-small {
+		display: none !important
+	}
+}
+
+.list-bordered>li {
+  margin: 0;
+  padding: 18px 0;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 17px;
+}
+
+.list>lis {
+  margin-bottom: 12px;
+}
+
 .friend-count {
   list-style: none;
 }
@@ -8,10 +51,28 @@
 
 .review-sidebar {
   width: 37.5%;
+  float: left;
+  padding: 0 15px;
+  min-height: 1px;
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  text-align: -webkit-match-parent;
+  color: #333;
 }
 
-.user-name {
+.review-sidebar-content {
+  margin-top: -3px;
+
+}
+
+.user-name .user-display-name {
   font-weight: bold;
+  font-size: 14px;
+  line-height: 1.28571em;
 }
 
 .user-passport-info {
@@ -37,6 +98,15 @@
   position: relative;
 }
 
+.media-block>.media-avatar {
+  border-right: 6px solid transparent;
+  border-left: none;
+}
+
+.media-avatar {
+  border-right-width: 9px;
+}
+
 .media-story {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
@@ -44,16 +114,8 @@
   flex: 1;
   min-width: 0;
   min-height: 0;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  display: block;
-  text-align: -webkit-match-parent;
-  list-style: none;
-  color: #333;
+  margin: -12px;
+  margin-left: -38px;
 }
 
 .user-passport-info {
@@ -64,9 +126,16 @@
   color: #0073bb;
 }
 
+.user-location {
+  font-weight: bold;
+  text-align: -webkit-match-parent;
+  list-style: none;
+}
+
 .user-passport-stats {
   list-style: none;
   color: #666;
+  margin-top: -10px;
 }
 
 .user-passport-stats--inline>li {
@@ -86,4 +155,10 @@
   position: absolute;
   color: #f15c00;
   font-weight: bold;
+  text-decoration: none;
+  text-align: -webkit-match-parent;
+  list-style: none;
+  cursor: pointer;
+  left: 63px;
+
 }

@@ -20,8 +20,16 @@ class ReviewSidebar extends React.Component {
                 </div>
                 <div className="media-story">
                   <ul className="user-passport-info">
-                    <li className="user-name">Deadhead L.</li>
-                    <li className="user-location">
+                    <li className="user-name">
+                    <a class="user-display-name js-analytics-click" 
+                      href="/user_details?userid=o8Lpbd9-X4Ep3z-gcVdNSw" 
+                      data-hovercard-id="QnudeBA_AWfn-zfltgyXng" 
+                      data-analytics-label="about_me" 
+                      id="dropdown_user-name">
+                      Dianna N.
+                    </a>
+                    </li>
+                    <li className="user-location responsive-hidden-small">
                       <b>San Francisco, CA</b>
                     </li>
                   </ul>
