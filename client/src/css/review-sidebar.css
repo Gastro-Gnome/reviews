@@ -30,6 +30,12 @@ a {
 	}
 }
 
+.icon {
+  fill: #f15c00;
+  width: 18px;
+  heigth: 18px;
+}
+
 .list-bordered>li {
   margin: 0;
   padding: 18px 0;
@@ -44,6 +50,12 @@ a {
 .friend-count {
   list-style: none;
 }
+
+.friends-passport {
+  padding-left: 5px;
+  margin-top: -8px;
+}
+
 .pb-60s {
   width: 60px;
   height: 60px;

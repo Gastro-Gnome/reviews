@@ -1,0 +1,42 @@
+.hovercard-wrapper {
+  opacity: 100;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 12px;
+  line-height: 1.5em;
+  margin-top: 6px;
+  font-weight: bold;
+  list-style: none;
+  margin: 0;
+  padding-top: 15px;
+  border: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  vertical-align: baseline;
+}
+
+.hovercard-table {
+  color: #0073bb;
+  text-decoration: none;
+  display: table;
+  min-width: 100%;
+}
+
+.hovercard-icons {
+  fill: #0073bb;
+  width: 18px;
+  heigth: 18px;
+}
+
+.arrange-middle>.arrange_unit {
+  vertical-align: middle;
+}
+
+.arrange_unit-fill {
+  width: 100%;
+}
+
+.arrange_unit {
+  box-sizing: border-box;
+  display: table-cell;
+}
+
