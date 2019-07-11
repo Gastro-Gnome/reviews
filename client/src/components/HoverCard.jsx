@@ -1,10 +1,16 @@
 import React from 'react';
-import css2 from '../css/hovercard.css';
+import css from '../css/hovercard.css';
 
 function HoverCard(props) {
+  let isHovered = props.isHovered;
+  let fadeClass = 'social-connect';
+
+  if(isHovered) {
+    fadeClass = 'social-connect fade-in';
+  }
 
   return (
-    <div className="social-connect">
+    <div className={fadeClass}>
       <div>
         <span aria-hidden="true" className="icons">
           <svg id="18x18_friends" height="18" viewBox="0 0 18 18" width="18">

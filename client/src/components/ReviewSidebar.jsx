@@ -1,11 +1,20 @@
 import React from 'react';
 import css from '../css/review-sidebar.css';
-import HoverCard from './HoverCard.jsx'
+import HoverCard from './HoverCard.jsx';
 
 function ReviewSidebar(props) {
+  let handleHover = props.handleHover;
+
+  function fadeIn() {
+    handleHover();
+  }
+
+  function fadeOut() {
+    handleHover();
+  }
 
   return (
-    <div className="profile-wrapper">
+    <div className="profile-wrapper" onMouseOver={fadeIn}>
       <div className="photo-box">
         <img src="https://source.unsplash.com/random/60x60" />
       </div>
@@ -65,7 +74,7 @@ function ReviewSidebar(props) {
           &nbsp; Elite ’19 
         </li>
       </ul>
-      <HoverCard />
+      <HoverCard isHovered={props.isHovered}/>
     </div>
   )
 }
