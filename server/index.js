@@ -1,10 +1,13 @@
 const express = require('express');
+const path = require('path');
 const axios = require('axios');
 
 const { getBusinessReviews } = require('../database/reviews');
 
 const app = express();
 const port = 3000;
+
+app.use(express.static(path.join(__dirname, '../public')));
 
 app.param('busId', (req, res, next, business) => {
   
@@ -20,6 +23,10 @@ app.param('busId', (req, res, next, business) => {
 app.get('/reviews/:busId', ((req, res, next) =>  {
   res.send(req.business);
 }));
+
+app.get('/', (req, res) => {
+  res.end();
+});
 
 app.listen(port, () => {
   console.log(`Reviews server is running on port ${port}`);

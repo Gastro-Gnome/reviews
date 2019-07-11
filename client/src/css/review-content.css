@@ -1,0 +1,78 @@
+.review-wrapper {
+  display: grid;
+  grid-template-rows: 22px 24px auto auto 20px 35px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  font-size: 14px;
+}
+
+.review-content-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 90px);
+  grid-template-rows: 25px;
+  list-style: none;
+}
+
+.vote-type {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.useful-vote,
+.funny-vote,
+.cool-vote {
+  border-radius: 4px;
+  border: 1px solid #666;
+}
+
+,.useful-vote {
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+.funny-vote {
+  grid-column-start: 2;
+  grid-column-end: 2;  
+}
+
+.cool-vote {
+  grid-column-start: 3;
+  grid-column-end: 3;    
+}
+
+.useful-icon,
+.funny-icon,
+.cool-icon {
+  fill: #666;
+}
+
+.check-in-icon {
+  fill: #0077bc;
+}
+
+.was-it-helpful {
+  font-weight: bold;
+  color: #666;
+  font-size: 12px;
+}
+
+.rating-large {
+  position: relative;
+  overflow: hidden;
+}
+
+.i-stars--regular-4 {
+  width: 102px;
+  height: 14px;
+  background-position: 0 -366px;
+}
+
+.i-stars {
+  background-size: 132px 560px;
+}
+
+media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+.i-stars {
+    background-image: url(https://s3-media1.fl.yelpcdn.com/assets/srv0/yelp_design_web/de2252bea656/assets/img/stars/stars@2x.png);
+}

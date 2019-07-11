@@ -7,10 +7,21 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isHovered: false
+      isHovered: false,
+      reviews: [],
+      businessId: 'deadhead123'
     }
 
     this.handleHover = this.handleHover.bind(this);
+  }
+
+  componentDidMount() {
+    const { businessId } = this.state;
+    fetch(`/reviews/${businessId}`, {
+      method: 'GET'
+    }).then(res => res.json())
+      .then(res => this.setState({ reviews: res }))
+      .catch(err => console.log(err));
   }
 
   handleHover() {
