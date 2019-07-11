@@ -15,14 +15,3 @@ describe('<App />', () => {
     expect(wrapper.find(ReviewSidebar)).toHaveLength(1);
   });
 });
-
-
-
-// it('renders children when passed in', () => {
-//   const wrapper = shallow((
-//     <MyComponent>
-//       <div className="unique" />
-//     </MyComponent>
-//   ));
-//   expect(wrapper.contains(<div className="unique" />)).to.equal(true);
-// });
