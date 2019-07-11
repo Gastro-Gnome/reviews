@@ -1,0 +1,4 @@
+.review-component-container {
+  display: grid;
+  grid-template-columns: 247px 413px;
+}

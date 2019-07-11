@@ -1,176 +1,40 @@
-body {
-  font-size: 14px;
-  line-height: 1.28571em;
+.profile-wrapper {
+  display: grid;
+  grid-template-columns: 60px 187px;
+  grid-template-rows: 119px 10px auto;
+}
+
+.profile-details {
+  display: grid;
+  grid-template-rows: repeat(6, 20px);
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  line-height: 1;
-  color: #333;
-}
-
-ul {
   list-style: none;
+  color: #333;
+  font-size: 14px;
+  transform: translate(-30px, -10px);
 }
 
-li {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-a {
+.profile-name {
+  font-weight: bold;
+  line-height: 1.28571em;
   color: #0073bb;
-  text-decoration: none;
+  transform: translate(0px, -4px);
 }
 
-@media only screen and (max-width: 479px) {
-	.responsive .responsive-hidden-small {
-		display: none !important
-	}
+.profile-location {
+  transform: translate(0px, -4px);  
+}
+
+.social-profile-info {
+  transform: translate(0px, -4px);    
 }
 
 .icon {
   fill: #f15c00;
-  width: 18px;
-  heigth: 18px;
 }
 
-.list-bordered>li {
-  margin: 0;
-  padding: 18px 0;
-  border-bottom: 1px solid #e6e6e6;
-  padding-bottom: 17px;
-}
-
-.list>lis {
-  margin-bottom: 12px;
-}
-
-.friend-count {
-  list-style: none;
-}
-
-.friends-passport {
-  padding-left: 5px;
-  margin-top: -8px;
-}
-
-.pb-60s {
-  width: 60px;
-  height: 60px;
-}
-
-.review-sidebar {
-  width: 37.5%;
-  float: left;
-  padding: 0 15px;
-  min-height: 1px;
-  margin: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  display: block;
-  text-align: -webkit-match-parent;
-  color: #333;
-}
-
-.review-sidebar-content {
-  margin-top: -3px;
-
-}
-
-.user-name .user-display-name {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.28571em;
-}
-
-.user-passport-info {
-  list-style: none;
-}
-
-.temp-site-wrapper {
-  width: 960px;
-}
-
-.temp-feed-wrapper {
-  width: 66.66667%;
-}
-
-.passport {
-  font-size: 12px;
-  line-height: 1.5em;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-.media-block {
-  display: flex;
-  position: relative;
-}
-
-.media-block>.media-avatar {
-  border-right: 6px solid transparent;
-  border-left: none;
-}
-
-.media-avatar {
-  border-right-width: 9px;
-}
-
-.media-story {
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  min-width: 0;
-  min-height: 0;
-  margin: -12px;
-  margin-left: -38px;
-}
-
-.user-passport-info {
-
-}
-
-.user-name {
-  color: #0073bb;
-}
-
-.user-location {
-  font-weight: bold;
-  text-align: -webkit-match-parent;
-  list-style: none;
-}
-
-.user-passport-stats {
-  list-style: none;
-  color: #666;
-  margin-top: -10px;
-}
-
-.user-passport-stats--inline>li {
-	display: inline;
-	margin-right: 6px
-}
-
-.passport .user-passport-stats--inline {
-	margin: 3px 0
-}
-
-.friend-count {
-  color:#666;
-}
-
-.is-elite {
-  position: absolute;
+.level {
   color: #f15c00;
   font-weight: bold;
-  text-decoration: none;
-  text-align: -webkit-match-parent;
-  list-style: none;
-  cursor: pointer;
-  left: 63px;
-
+  transform: translate(-8px, 5px);  
 }

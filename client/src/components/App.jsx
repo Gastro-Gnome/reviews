@@ -1,21 +1,23 @@
 import React from 'react';
+import css from '../css/app.css';
 import ReviewSidebar from './ReviewSidebar.jsx';
-import axios from 'axios';
 
 class App extends React.Component {
   constructor(props) {
-      super(props);
-      this.state = {
-        isHovered: false
-      }
+    super(props);
   }
 
   render () {
-      return (
-          <div>
-              <ReviewSidebar />
-          </div>
-      )
+    return (
+      <div className="review-component-container">
+        <div className="profile-container">
+          <ReviewSidebar />
+        </div>
+        <div className="review-container">
+
+        </div>
+      </div>
+    )
   }
 }
 
