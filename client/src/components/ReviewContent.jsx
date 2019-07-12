@@ -23,6 +23,7 @@ function ReviewContent(props) {
         </div>
         <div className="text-content">
           <p lang="en">
+            {/* {props.reviews[0].text} */}
             Lucas $17.75: I love this pizza. All the toppings go so well together. Anytime I have a 
             pizza with prosciutto anywhere else, I compare it Archive's Lucas and it doesn't come close!
             <br/>
