@@ -3,17 +3,18 @@ const db = require('./index.js');
 
 const reviewSchema = new mongoose.Schema(
   {
-    bus_id: {
+    record_id: {
       type: String,
       unique: true,
     },
+    bus_id: String,
     rating: Number,
-    user_name: String,
     profile_name: String,
     friends: Array,
-    image_url: String,
-    name: String,
+    profile_image: String,
+    name: Array,
     review_total: Number,
+    photos: Array,
     photo_total: Number,
     level: String,
     location: String,
@@ -22,7 +23,6 @@ const reviewSchema = new mongoose.Schema(
     useful_count: Number,
     funny_count: Number,
     cool_count: Number,
-    photos: Array,
     text: String,
     url: String,
     voted: Array,

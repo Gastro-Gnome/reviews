@@ -1,6 +1,6 @@
 .review-wrapper {
   display: grid;
-  grid-template-rows: 22px 24px auto auto 20px 35px;
+  grid-template-rows: 22px 18px auto auto 20px 35px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
   font-size: 14px;
