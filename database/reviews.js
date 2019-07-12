@@ -5,7 +5,7 @@ const reviewSchema = new mongoose.Schema(
   {
     bus_id: {
       type: String,
-      unique: true
+      unique: true,
     },
     rating: Number,
     user_name: String,
@@ -25,19 +25,17 @@ const reviewSchema = new mongoose.Schema(
     photos: Array,
     text: String,
     url: String,
-    voted: Array
-  }   
+    voted: Array,
+  },
 );
 
 const Review = mongoose.model('Review', reviewSchema);
 
 async function getBusinessReviews(business) {
-  return await Review.find({bus_id: business}, (err, business) => {
-    return business;
-  });
-};
+  return await Review.find({ bus_id: business }, (err, business) => business);
+}
 
-module.exports = { 
+module.exports = {
   Review,
-  getBusinessReviews
+  getBusinessReviews,
 };

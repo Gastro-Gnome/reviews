@@ -10,17 +10,16 @@ const port = 3000;
 app.use(express.static(path.join(__dirname, '../public')));
 
 app.param('busId', (req, res, next, business) => {
-  
   req.business = getBusinessReviews(business, (err, business) => {
-    if(err) return next(err);
+    if (err) return next(err);
   })
-  .then((business) => {
-    req.business = business;
-    next();
-  });
+    .then((business) => {
+      req.business = business;
+      next();
+    });
 });
 
-app.get('/reviews/:busId', ((req, res, next) =>  {
+app.get('/reviews/:busId', ((req, res, next) => {
   res.send(req.business);
 }));
 

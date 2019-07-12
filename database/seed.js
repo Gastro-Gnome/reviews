@@ -22,8 +22,8 @@ const sampleData = [
     photos: [],
     text: 'Congratulations, you played yourself. The key is to enjoy life, because they don’t want you to enjoy life. I promise you, they don’t want you to jetski, they don’t want you to smile. Wraith talk. It’s important to use cocoa butter. It’s the key to more success, why not live smooth? Why live rough? To be successful you’ve got to work hard, to make history, simple, you’ve got to make it. Life is what you make it, so let’s make it. The weather is amazing, walk with me through the pathway of more success. Take this journey with me, Lion!',
     url: 'https://www.archivebarsf.com/',
-    voted: []
-  }
+    voted: [],
+  },
 ];
 
 const seed = () => {
