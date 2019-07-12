@@ -18,6 +18,18 @@ function ReviewSidebar(props) {
     handleHover();
   }
 
+  function shortenLocation(location) {
+    let totalChars = location.length;
+
+    if(totalChars > 19) {
+      let cityState = location.split(',');
+      cityState[1].trim();
+      return cityState[1];
+    } else {
+      return location;
+    }
+  }
+
   return (
     <div className="profile-wrapper" onMouseOver={fadeIn}>
       <ProfilePhoto photo={profileImage} />
@@ -26,7 +38,7 @@ function ReviewSidebar(props) {
           {profileName}
         </li>
         <li className="profile-location">
-          <b>{location}</b>
+          <b>{shortenLocation(location)}</b>
         </li>
         <li className="social-profile-info">
           <span aria-hidden="true" className="icon">
