@@ -28,12 +28,12 @@ const ReviewContent = (props) => {
       <UserPhotos photos={photos} />
       <div className="was-it-helpful">
       &nbsp; Was this review ...?
-      </div>
-      <div className="review-content-footer">
-        <UsefulVote usefulCount={usefulCount} />
-        <FunnyVote funnyCount={funnyCount} />
-        <CoolVote coolCount={coolCount} />
-      </div>
+    </div>
+    <div className="review-content-footer">
+      <UsefulVote usefulCount={usefulCount} />
+      <FunnyVote funnyCount={funnyCount} />
+      <CoolVote coolCount={coolCount} />
+    </div>
     </div>
   )
 }

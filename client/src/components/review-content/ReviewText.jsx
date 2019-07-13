@@ -4,8 +4,7 @@ const ReviewText = (props) => {
   const { text } = props;
 
   return (
-    <div className="text-content">
-      {text}
+    <div className="text-content" dangerouslySetInnerHTML={{__html: text}}>
     </div> 
   )
 }

@@ -13,7 +13,7 @@ const CheckIns = (props) => {
       </svg>
     </span>
     <span className="review-date">
-      &nbsp;{checkIns}
+      &nbsp;{checkIns}&nbsp;Check-ins
     </span>
   </div>
   )

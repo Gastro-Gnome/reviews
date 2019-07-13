@@ -3,7 +3,7 @@ import css from '../../css/profile-photo.css';
 
 const ProfilePhoto = (props) => (
   <div className="photo-box">
-    <img src={props.photo}/>
+    <img className="profile-photo" src={props.photo}/>
   </div>
 )
 
