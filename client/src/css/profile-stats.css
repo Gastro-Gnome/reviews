@@ -8,10 +8,36 @@
   transform: translate(-30px, -10px);
 }
 
-.social-profile-info {
-  transform: translate(0px, -4px);    
+.friends-social-profile-info {
+  display: grid;
+  grid-template-columns: 20px auto;
 }
-  
+
+.friends-info-text {
+  grid-column-start: 2;
+  transform: translateY(2px);
+}
+
+.reviews-social-profile-info {
+  display: grid;
+  grid-template-columns: 20px auto;
+}
+
+.reviews-info-text {
+  grid-column-start: 2;
+  transform: translateY(2px);
+}
+
+.photos-social-profile-info {
+  display: grid;
+  grid-template-columns: 20px auto;
+}
+
+.photos-info-text {
+  grid-column-start: 2;
+  transform: translateY(2px);
+}
+
 .icon {
   fill: #f15c00;
 }
