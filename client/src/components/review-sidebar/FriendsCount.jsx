@@ -4,8 +4,8 @@ const FriendsCount = (props) => {
   const { totalFriends } = props;
 
   return (
-    <li className="social-profile-info">
-    <span aria-hidden="true" className="icon">
+    <li className="friends-social-profile-info">
+    <span aria-hidden="true" className="icon friends-icon">
       <svg height="18" viewBox="0 0 18 18" width="18">
         <g>
           <path d="M7.904 9.43l-2.098 4.697a.9.9 0 0 1-1.612 0L2.096 
@@ -18,7 +18,7 @@ const FriendsCount = (props) => {
         </g>
       </svg>
     </span>
-    <span className="info-text">
+    <span className="info-text friends-info-text">
       <b>{totalFriends.length}</b>
       &nbsp;friends
     </span>

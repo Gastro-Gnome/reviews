@@ -4,7 +4,7 @@ const ReviewsCount = (props) => {
   const { totalReviews } = props;
 
   return (
-    <li>
+    <li className="reviews-social-profile-info">
       <span aria-hidden="true" className="icon">
         <svg height="18" viewBox="0 0 18 18" width="18">
           <g>
@@ -15,7 +15,7 @@ const ReviewsCount = (props) => {
           </g>
         </svg>
       </span>
-      <span className="info-text">
+      <span className="info-text reviews-info-text">
         <b>{totalReviews}</b>
         &nbsp;reviews
       </span>                      

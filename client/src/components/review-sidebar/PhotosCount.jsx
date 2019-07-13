@@ -4,7 +4,7 @@ const PhotosCount = (props) => {
   const { totalPhotos } = props;
 
   return (
-    <li>
+    <li className="photos-social-profile-info">
       <span aria-hidden="true" className="icon">
         <svg id="18x18_friends" height="18" viewBox="0 0 18 18" width="18">
           <g>
@@ -15,7 +15,7 @@ const PhotosCount = (props) => {
           </g>
         </svg>
       </span>
-      <span className="info-text">
+      <span className="info-text photos-info-text">
         <b> {totalPhotos}</b>
         &nbsp;photos
       </span>                      
