@@ -5,10 +5,17 @@ const UserPhotos = (props) => {
 
   return (
     <div className="review-photos">
-      <img src={photos[0]}/>
-      <img src={photos[1]}/>
+      <div className="large-photo">
+        <img src={photos[0]}/>
+
+      </div>
+      <span className="small-photo1">     
+        <img src={photos[1]}/>
+      </span> 
         &nbsp;&nbsp;&nbsp;
-      <img src={photos[2]}/>
+      <span className="small-photo2">
+        <img src={photos[2]}/>
+      </span>
     </div>
   )
 }

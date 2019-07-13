@@ -16,6 +16,37 @@
   text-align: center;
 }
 
+.review-photos {
+  display: grid;
+  grid-template-columns: 174px 174px;
+  grid-template-rows: auto auto;
+  grid-gap: 5px;
+}
+
+.check-ins {
+  display: grid;
+  grid-template-columns: 18px auto;
+  grid-auto-rows: 20px;
+}
+
+.check-in-text {
+  transform: translateY(1px);
+}
+
+.large-photo {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.small-photo1 {
+  grid-column-start: 1;
+}
+
+.small-photo2 {
+  grid-row-end: 3;
+  grid-column-start: 2;
+}
+
 .vote-type {
   font-size: 12px;
   line-height: 18px;

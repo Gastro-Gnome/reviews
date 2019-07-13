@@ -12,7 +12,7 @@ const CheckIns = (props) => {
         2.662.932.524-2.77 2.772-.524-.932-2.66L18 9zm-9.85 3.23L5.324 9.4l1.13-1.13 1.698 1.696 3.396-3.395 1.13 1.134-4.525 4.525z"></path>
       </svg>
     </span>
-    <span className="review-date">
+    <span className="check-in-text">
       &nbsp;{checkIns}&nbsp;Check-ins
     </span>
   </div>
