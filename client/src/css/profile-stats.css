@@ -21,3 +21,8 @@
   font-weight: bold;
   transform: translate(-8px, 5px);  
 }
+
+.info-text {
+  color: #666;
+  font-size: 12px;
+}

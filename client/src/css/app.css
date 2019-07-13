@@ -1,4 +1,7 @@
 .review-component-container {
+  width: 660px;
   display: grid;
   grid-template-columns: 247px 413px;
+  border-bottom: 1px solid #666;
+  margin-top: 20px;
 }
