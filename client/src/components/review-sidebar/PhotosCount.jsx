@@ -16,7 +16,7 @@ const PhotosCount = (props) => {
         </svg>
       </span>
       <span className="info-text">
-        <b>{totalPhotos.length}</b>
+        <b> {totalPhotos}</b>
         &nbsp;photos
       </span>                      
     </li>

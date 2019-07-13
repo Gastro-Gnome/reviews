@@ -65,6 +65,7 @@ class App extends React.Component {
               
               return (
                 <div className="review-component-container">
+
                   <div className="profile-container">
                     <ReviewSidebar 
                       profileImage={profile_image}
@@ -89,6 +90,7 @@ class App extends React.Component {
                       voted={voted}
                       />
                   </div>
+                  <br/>
                 </div>
               )
             })

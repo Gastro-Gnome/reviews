@@ -26,7 +26,7 @@ const ReviewContent = (props) => {
       <CheckIns checkIns={checkIns} />
       <ReviewText text={text} />
       <UserPhotos photos={photos} />
-      <div className="was-it-helpful">
+    <div className="was-it-helpful">
       &nbsp; Was this review ...?
     </div>
     <div className="review-content-footer">
