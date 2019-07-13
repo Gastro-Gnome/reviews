@@ -1,7 +1,7 @@
 import React from 'react';
-import css from '../css/hovercard.css';
+import css from '../../css/hovercard.css';
 
-function HoverCard(props) {
+const HoverCard = (props) => {
   let isHovered = props.isHovered;
   let fadeClass = 'social-connect';
 
@@ -12,7 +12,7 @@ function HoverCard(props) {
   return (
     <div className={fadeClass}>
       <div>
-        <span aria-hidden="true" className="icons">
+        <span aria-hidden="true" className="icons share-review">
           <svg id="18x18_friends" height="18" viewBox="0 0 18 18" width="18">
             <g>
               <path d="M17.714 6.43L13 10.356v-3.03c-1 
@@ -26,7 +26,7 @@ function HoverCard(props) {
         </span>
       </div>
       <div>
-        <span aria-hidden="true" className="icons">
+        <span aria-hidden="true" className="icons embed-review">
           <svg id="18x18_friends" height="18" viewBox="0 0 18 18" width="18">
             <g>
               <path d="M12.503 13.76a.717.717 0 0 1-.526.23.717.717 0 0 1-.526-.23.822.822 
@@ -42,7 +42,7 @@ function HoverCard(props) {
         </span>
       </div>
       <div>
-        <span aria-hidden="true" className="icons">
+        <span aria-hidden="true" className="icons compliment-review">
           <svg id="18x18_friends" height="18" viewBox="0 0 18 18" width="18">
             <g>
               <path d="M14.5 6.75a5.5 5.5 0 0 0-11 0 5.495 5.495 0 0 0 2.993 4.892L5.5 
@@ -56,7 +56,7 @@ function HoverCard(props) {
         </span>
       </div>
       <div>
-        <span aria-hidden="true" className="icons">
+        <span aria-hidden="true" className="icons send-message">
           <svg id="18x18_friends" height="18" viewBox="0 0 18 18" width="18">
             <g>
             <path d="M2 4v6a2 2 0 0 0 2 2h1v3l4-3h5a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"></path>
@@ -68,7 +68,7 @@ function HoverCard(props) {
         </span>
       </div>
       <div>
-        <span aria-hidden="true" className="icons">
+        <span aria-hidden="true" className="icons follow-user">
           <svg id="18x18_friends" height="18" viewBox="0 0 18 18" width="18">
             <g>
               <path d="M16 13l-4 3v-2H9l1-2h2v-2l4 3zm-8.925 2.383c-.443.817-1.707.817-2.15 

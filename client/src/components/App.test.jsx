@@ -5,8 +5,8 @@ import Adapter from 'enzyme-adapter-react-16';
 import App from './App.jsx';
 import Loader from './Loader.jsx';
 import axios from 'axios';
-import ReviewContent from './ReviewContent';
-import ReviewSidebar from './ReviewSidebar';
+import ReviewContent from './review-content/ReviewContent';
+import ReviewSidebar from './review-sidebar/ReviewSidebar';
 
 configure({ adapter: new Adapter() });
 configure({ disableLifecycleMethods: true });

@@ -1,8 +1,8 @@
 import React from 'react';
 import css from '../css/app.css';
 import Loader from './Loader';
-import ReviewSidebar from './ReviewSidebar';
-import ReviewContent from './ReviewContent';
+import ReviewSidebar from './review-sidebar/ReviewSidebar';
+import ReviewContent from './review-content/ReviewContent';
 
 class App extends React.Component {
   constructor(props) {
@@ -48,6 +48,7 @@ class App extends React.Component {
                 friends,
                 profile_image,
                 review_total,
+                rating,
                 photos,
                 photo_total,
                 level,
@@ -76,7 +77,17 @@ class App extends React.Component {
                       isHovered={this.state.isHovered}/>
                   </div>
                   <div className="review-container">
-                    <ReviewContent reviews={this.state.reviews}/>
+                    <ReviewContent
+                      rating={rating}
+                      checkIns={check_ins}
+                      text={text}
+                      photos={photos}
+                      usefulCount={useful_count}
+                      funny_count={funny_count}
+                      cool_count={cool_count}
+                      level={level}
+                      voted={voted}
+                      />
                   </div>
                 </div>
               )
