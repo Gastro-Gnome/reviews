@@ -1,8 +1,8 @@
 import React from 'react';
 import css from '../css/app.css';
 import Loader from './Loader';
-import ReviewSidebar from './ReviewSidebar';
-import ReviewContent from './ReviewContent';
+import ReviewSidebar from './review-sidebar/ReviewSidebar';
+import ReviewContent from './review-content/ReviewContent';
 
 class App extends React.Component {
   constructor(props) {

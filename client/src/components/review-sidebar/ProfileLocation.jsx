@@ -1,5 +1,5 @@
 import React from 'react';
-import css from '../css/profile-location.css';
+import css from '../../css/profile-location.css';
 
 const ProfileLocation = (props) => {
   const shortenLocation = (location) => {

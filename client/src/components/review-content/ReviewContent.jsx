@@ -1,5 +1,5 @@
 import React from 'react';
-import css from '../css/review-content.css';
+import css from '../../css/review-content.css';
 import Stars from './Stars';
 import CheckIns from './CheckIns';
 import ReviewText from './ReviewText';

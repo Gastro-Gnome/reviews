@@ -1,5 +1,5 @@
 import React from 'react';
-import css from '../css/hovercard.css';
+import css from '../../css/hovercard.css';
 
 const HoverCard = (props) => {
   let isHovered = props.isHovered;

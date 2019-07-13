@@ -1,5 +1,5 @@
 import React from 'react';
-import css from '../css/profile-stats.css';
+import css from '../../css/profile-stats.css';
 import ProfileName from './ProfileName';
 import ProfileLocation from './ProfileLocation';
 import FriendsCount from './FriendsCount';

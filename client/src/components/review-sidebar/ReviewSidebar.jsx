@@ -1,5 +1,5 @@
 import React from 'react';
-import css from '../css/review-sidebar.css';
+import css from '../../css/review-sidebar.css';
 import HoverCard from './HoverCard.jsx';
 import ProfilePhoto from './ProfilePhoto';
 import ProfileStats from './ProfileStats';
