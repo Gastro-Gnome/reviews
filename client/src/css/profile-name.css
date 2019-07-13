@@ -1,0 +1,7 @@
+.profile-name {
+  list-style: none;
+  font-weight: bold;
+  line-height: 1.28571em;
+  color: #0073bb;
+  transform: translate(0px, -4px);
+}

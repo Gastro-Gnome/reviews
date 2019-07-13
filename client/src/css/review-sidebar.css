@@ -3,38 +3,3 @@
   grid-template-columns: 60px 187px;
   grid-template-rows: 119px 10px auto;
 }
-
-.profile-details {
-  display: grid;
-  grid-template-rows: repeat(6, 20px);
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  list-style: none;
-  color: #333;
-  font-size: 14px;
-  transform: translate(-30px, -10px);
-}
-
-.profile-name {
-  font-weight: bold;
-  line-height: 1.28571em;
-  color: #0073bb;
-  transform: translate(0px, -4px);
-}
-
-.profile-location {
-  transform: translate(0px, -4px);  
-}
-
-.social-profile-info {
-  transform: translate(0px, -4px);    
-}
-
-.icon {
-  fill: #f15c00;
-}
-
-.level {
-  color: #f15c00;
-  font-weight: bold;
-  transform: translate(-8px, 5px);  
-}

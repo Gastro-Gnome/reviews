@@ -1,0 +1,19 @@
+import React from 'react';
+
+const FunnyVote = (props) => {
+  return (
+    <span className="funny-vote">
+      <span aria-hidden="true" className="icon">
+        <svg className="funny-icon" height="18" viewBox="0 0 18 18" width="18">
+          <path d="M9 17c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM9 2C5.14 2 2 5.14 2 
+          9s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm0 12a4.87 4.87 0 0 1-4.787-4h9.574A4.87 4.87 0 0 1 9 
+          14zm2.5-5.625a1.376 1.376 0 1 1 0-2.75 1.376 1.376 0 0 1 0 2.75zm-5 0a1.376 1.376 0 1 1 0-2.75 
+          1.376 1.376 0 0 1 0 2.75z"></path>
+        </svg>
+      </span>
+      <span className="vote-type">Funny</span>
+    </span>
+  )
+}
+
+export default FunnyVote;
