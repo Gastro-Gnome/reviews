@@ -10,7 +10,7 @@ const HoverCard = (props) => {
   }
 
   return (
-    <div className={fadeClass}>
+    <div className="social-connect">
       <div>
         <span aria-hidden="true" className="icons share-review">
           <svg id="18x18_friends" height="18" viewBox="0 0 18 18" width="18">

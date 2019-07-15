@@ -5,7 +5,7 @@ const MemberLevel = (props) => {
 
   return (
     <li className="level">
-      &nbsp; Elite ’19
+      <a className="level-link" href="https://www.yelp.com/elite">Elite ’19</a>
     </li>    
   )
 }

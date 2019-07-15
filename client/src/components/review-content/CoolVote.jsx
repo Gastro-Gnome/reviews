@@ -3,7 +3,7 @@ import React from 'react';
 const CoolVote = (props) => {
   return (
     <span className="cool-vote">
-      <span aria-hidden="true" className="icon">
+      <span aria-hidden="true" className="icon cool-vote-icon">
         <svg className="cool-icon" height="18" viewBox="0 0 18 18" width="18">
           <path d="M9 17c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM9 2C5.14 2 2 5.14 2 
           9s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm6.026 5.335C14.766 8.797 13.5 10 11.986 10h-.003c-1.218 
@@ -12,7 +12,7 @@ const CoolVote = (props) => {
           4.154A4.28 4.28 0 0 1 9 14.144a4.28 4.28 0 0 1-3.958-2.657A6.81 6.81 0 0 0 9 12.753a6.81 6.81 0 0 0 3.958-1.265z"></path>
         </svg>
       </span>
-      <span className="vote-type">Cool</span>
+      <span className="vote-type cool-vote-type">Cool</span>
     </span>
   )
 }

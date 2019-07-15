@@ -45,7 +45,21 @@
 .level {
   color: #f15c00;
   font-weight: bold;
-  transform: translate(-8px, 5px);  
+  transform: translate(1px, 5px);
+}
+
+.level-link {
+  color: #f15c00;
+  font-weight: bold;
+  transform: translate(-4px, 5px);
+  text-decoration: none;  
+}
+
+.level-link:hover {
+  color: #f15c00;
+  font-weight: bold;
+  transform: translate(-8px, 5px);
+  text-decoration: underline;  
 }
 
 .info-text {

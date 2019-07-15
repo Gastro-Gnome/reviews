@@ -61,9 +61,77 @@
   border: 1px solid #666;
 }
 
-,.useful-vote {
+.useful-vote {
+  display: grid;
+  grid-template-columns: 20px auto;
+}
+
+.useful-vote-clicked {
+  display: grid;
+  grid-template-columns: 20px auto;
+  background-color: deepskyblue;  
+}
+
+.useful-vote:hover {
+  display: grid;
+  grid-template-columns: 20px auto;
+  background-color: #e6e6e6;
+}
+
+.useful-vote-icon {
   grid-column-start: 1;
-  grid-column-end: 1;
+  transform: translate(4px, 4px);
+
+}
+
+.funny-vote-type {
+  grid-column-start: 2;
+  transform: translateY(5px);
+}
+
+.funny-vote {
+  display: grid;
+  grid-template-columns: 20px auto;
+}
+
+.funny-vote-icon {
+  grid-column-start: 1;
+  transform: translate(4px, 4px);
+
+}
+
+.funny-vote:hover {
+  display: grid;
+  grid-template-columns: 20px auto;
+  background-color: #e6e6e6
+}
+
+
+.cool-vote-type {
+  grid-column-start: 2;
+  transform: translateY(5px);
+}
+
+.cool-vote {
+  display: grid;
+  grid-template-columns: 20px auto;
+}
+
+.cool-vote-icon {
+  grid-column-start: 1;
+  transform: translate(4px, 4px);
+
+}
+
+.cool-vote:hover {
+  display: grid;
+  grid-template-columns: 20px auto;
+  background-color: #e6e6e6  
+}
+
+.useful-vote-type {
+  grid-column-start: 2;
+  transform: translateY(5px);
 }
 
 .funny-vote {

@@ -5,3 +5,21 @@
   color: #0073bb;
   transform: translate(0px, -4px);
 }
+
+.profile-name-link {
+  list-style: none;
+  font-weight: bold;
+  line-height: 1.28571em;
+  color: #0073bb;
+  transform: translate(0px, -4px);
+  text-decoration: none;
+}
+
+.profile-name-link:hover {
+  list-style: none;
+  font-weight: bold;
+  line-height: 1.28571em;
+  color: #0073bb;
+  transform: translate(0px, -4px);
+  text-decoration: underline;
+}

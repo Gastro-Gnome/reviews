@@ -5,7 +5,7 @@ const axios = require('axios');
 const { getBusinessReviews } = require('../database/reviews');
 
 const app = express();
-const port = 3000;
+const port = 3003;
 
 app.use(express.static(path.join(__dirname, '../public')));
 

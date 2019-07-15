@@ -6,7 +6,7 @@ const Stars = (props) => {
   
   return (
     <div className="i-stars i-stars--regular-4 rating-large rating">
-      <span class="stars" data-stars={rating}>XXXXX</span>
+      <span className="stars" data-stars={rating}>XXXXX</span>
     </div>
   )
 }
