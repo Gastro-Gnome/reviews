@@ -23,7 +23,7 @@ app.get('/reviews/:busId', ((req, res, next) => {
   res.send(req.business);
 }));
 
-app.get('/', (req, res) => {
+app.get('/reviews', (req, res) => {
   res.end();
 });
 
