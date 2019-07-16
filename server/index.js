@@ -19,11 +19,11 @@ app.param('busId', (req, res, next, business) => {
     });
 });
 
-app.get('/reviews/:busId', ((req, res, next) => {
+app.get('/:busId', ((req, res, next) => {
   res.send(req.business);
 }));
 
-app.get('/reviews', (req, res) => {
+app.get('/', (req, res) => {
   res.end();
 });
 
