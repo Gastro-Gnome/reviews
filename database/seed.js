@@ -1,4 +1,6 @@
 const db = require('./index.js');
+const mongoose = require('mongoose');
+
 const { Review } = require('./reviews.js');
 
 let bus_id = '8B279E48-57DF-A85F-658C-8A5BD4A51F0E';
@@ -557,7 +559,10 @@ const sampleData = [
 
 const seed = () => {
   Review.insertMany(sampleData)
-    .then(() => console.log('success'))
+    .then(() => {
+      console.log('success');
+      mongoose.disconnect();
+    })
     .catch(err => console.log(err));
 };
 

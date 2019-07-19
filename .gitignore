@@ -3,3 +3,4 @@ package-lock.json
 bundle.js
 __snapshots__
 coverage/
+data/

@@ -5,7 +5,7 @@ const axios = require('axios');
 const { getBusinessReviews } = require('../database/reviews');
 
 const app = express();
-const port = 3003;
+const port = 3000;
 
 app.use(express.static(path.join(__dirname, '../public')));
 
@@ -19,7 +19,7 @@ app.param('busId', (req, res, next, business) => {
     });
 });
 
-app.get('/:busId', ((req, res, next) => {
+app.get('/reviews/:busId', ((req, res, next) => {
   res.send(req.business);
 }));
 

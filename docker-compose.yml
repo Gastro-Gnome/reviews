@@ -1,0 +1,15 @@
+version: '3.6'
+
+services:
+  reviews:
+    build: ./
+    ports:
+      - "1337:3000"
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo:latest
+    container_name: "mongodb"
+    ports:
+      - "27017:27017"
