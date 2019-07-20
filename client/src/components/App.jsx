@@ -18,7 +18,7 @@ class App extends React.Component {
 
   componentDidMount() {
     const { businessId } = this.state;
-    fetch(`/reviews/${businessId}`, {
+    fetch(`${businessId}/reviews/`, {
       method: 'GET',
     }).then(res => res.json())
       .then(res => this.setState({ reviews: res }))
