@@ -41,6 +41,7 @@ class App extends React.Component {
 
       return (
         <div>
+        <div>
           {
             this.state.reviews.map(review => {
               const {
@@ -95,6 +96,7 @@ class App extends React.Component {
               )
             })
           }
+        </div>
         </div>
       )
     }

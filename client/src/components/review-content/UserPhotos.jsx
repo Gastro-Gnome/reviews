@@ -1,4 +1,5 @@
 import React from 'react';
+import css from '../../css/review-content.css';
 
 const UserPhotos = (props) => {
   const { photos } = props;
@@ -7,15 +8,17 @@ const UserPhotos = (props) => {
     <div className="review-photos">
       <div className="large-photo">
         <img src={photos[0]}/>
-
+        <div className="photo-box-overlay_caption">Lorem Large</div>
       </div>
-      <span className="small-photo1">     
+      <div className="small-photo1">     
         <img src={photos[1]}/>
-      </span> 
+        <div className="photo-box-overlay_caption_small">Lorem Small 1</div>
+      </div> 
         &nbsp;&nbsp;&nbsp;
-      <span className="small-photo2">
+      <div className="small-photo2">
         <img src={photos[2]}/>
-      </span>
+        <div className="photo-box-overlay_caption_small">Lorem Small 2</div>
+      </div>
     </div>
   )
 }
